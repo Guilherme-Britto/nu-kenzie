@@ -321,24 +321,47 @@ header button{
 
   .dashboard body{
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
+
+    gap: 24px;
+    margin: 0 5%;
   }
 
   .input__container{
     margin-left: 0;
+    width: 363px;
   }
 
   .totatSum{
-    margin-left: 0;
+    margin: 0;
+    width: 363px;
   }
 
   .card{
+    box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
 
-    margin-right: 5%;
+    margin-right: 0;
   }
 
   .title2{
     margin-top: 24px;
+    padding: 0;
+  }
+
+  .cards__container{
+    width: 100%;
+  }
+}
+
+@media(min-width: 1023px){
+  .dashboard header{
+    padding: 0 150px;
+  }
+
+  .dashboard body{
+    padding: 0 150px;
+    margin: 0;
   }
 }

@@ -30,7 +30,7 @@ export function App() {
             <section>
             <RegisterEntrance setCards={setCards} cards={cards} />
             </section>
-            <section>
+            <section className='cards__container'>
             <h2 className='title2'>Resumo Financeiro</h2>
             {cards.map((card) => (
               <CardRender key={card.id} description={card.description} price={card.price} entrance={card.entrance} cards={cards} />
