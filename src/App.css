@@ -1,0 +1,344 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+main{
+  font-family: 'Nunito';
+}
+
+.homePage{
+  height: 100vh;
+  padding: 84px 5%;
+  color: #fff;
+
+  background-color: #212529;
+}
+
+.homePage img{
+  width: 100%;
+}
+
+.modelImg{
+  margin: 0 auto;
+  display: block;
+  max-width: 593px;
+}
+
+.homePage div img{
+  margin-bottom: 30px;
+  width: unset;
+}
+
+.homePage h1{
+  font-size: 2.3rem;
+  font-weight: 800;
+
+  margin-bottom: 28px;
+}
+
+.homePage p{
+  font-weight: 300;
+  
+  margin-bottom: 28px;
+}
+
+ button{
+  margin: auto;
+  display: block;
+
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+
+  background-color: #FD377E;
+  color: #fff;
+  font-size: 1rem;
+
+  margin-bottom: 15px;
+}
+
+.dashboard header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5%;
+  height: 69px;
+
+  box-shadow: 0px 0px 8px #00000025;
+}
+
+.dashboard img{
+  height: 20px;
+}
+
+.title2{
+  padding-left: 5%;
+  margin-top: 20px;
+
+  font-weight: 700;
+}
+
+header button{
+  height: 40px;
+  width: 64px;
+  border-radius: 8px;
+  margin: 0;
+  background-color: #E9ECEF;
+  color: #343A40;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input__container{
+  display: flex;
+  flex-direction: column;
+
+  margin: 24px 5%;
+  padding: 38px 24px;
+  border: solid 1px #E9ECEF;
+  box-sizing: content-box;
+}
+
+.input__container label{
+  font-size: .75rem;
+}
+
+.input__container input{
+  height: 52.8px;
+  margin-top: 12px;
+  border-radius: 8px;
+  padding-left: 16px;
+
+  box-sizing: content-box;
+
+  background-color: #F8F9FA;
+}
+
+.input__container span{
+  margin-top: 4px;
+
+  font-size: .75rem;
+  font-weight: 400;
+
+  color: #868E96;
+}
+
+.select__container{
+  display: flex;
+  gap: 30px;
+
+  margin-top: 17px;
+}
+
+.label__container{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.label__container div{
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 9px;
+  border-radius: 8px;
+
+  background-color: #F8F9FA;
+}
+
+.select__container select{
+  height: 48px;
+  margin-top: 9px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 16px;
+
+  box-sizing: content-box;
+
+  background-color: #F8F9FA;
+}
+
+.label__container input{
+  width: 100%;
+  height: 48px;
+
+  margin-top: 0;
+}
+
+.label__container span{
+  margin-right: 11px;
+}
+
+.input__container button{
+  margin-top: 19px;
+}
+
+.totatSum{
+  border: solid 1px #E9ECEF;
+  margin: 0 5%;
+  padding: 24px;
+
+  position: relative;
+}
+
+.totatSum h2{
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #212529;
+}
+
+.totatSum span{
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #343A40;
+  margin-top: 6px;
+}
+
+.totatSum p{
+  position: absolute;
+
+  top: 30px;
+  right: 20px;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FD377E;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #F8F9FA;
+  margin: 20px 5%;
+  border-left: 4px solid #03B898;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.card h2{
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: #212529;
+}
+
+.card span{
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #343A40;
+
+  padding-top: 20px;
+}
+
+.card p{
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: #212529;
+
+  padding-top: 20px;
+}
+
+.card img{
+  align-self: flex-start;
+
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 2.46px;
+
+  height: 9.78px;
+
+  background-color: #E9ECEF;
+}
+
+@media(min-width: 769px){
+
+  .homePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+    padding: 0;
+  }
+  
+  .modelImg{
+    margin: 0;
+  }
+
+  .homePage div{
+    width: 347px;
+  }
+
+  .dashboard body{
+    display: flex;
+    justify-content: center;
+  }
+
+  .input__container{
+    margin-left: 0;
+  }
+
+  .totatSum{
+    margin-left: 0;
+  }
+
+  .card{
+    width: 100%;
+
+    margin-right: 5%;
+  }
+
+  .title2{
+    margin-top: 24px;
+  }
+}
