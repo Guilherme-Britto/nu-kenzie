@@ -300,7 +300,19 @@ header button{
   background-color: #E9ECEF;
 }
 
+.title3{
+  margin-top: 32px;
+  padding-left: 5%;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 @media(min-width: 769px){
+
+  .title3{
+    padding: 0;
+  }
 
   .homePage{
     display: flex;
@@ -363,5 +375,17 @@ header button{
   .dashboard body{
     padding: 0 150px;
     margin: 0;
+  }
+}
+
+@media(min-width: 1023px){
+  .card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card p{
+    padding: 0;
   }
 }

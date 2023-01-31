@@ -23,9 +23,9 @@ export function RegisterEntrance({ setCards, }) {
     setShow(true)
 
     if (newCard.entrance == 'Entrada') {
-      setTotalPrice(totalPrice + ~~price)
+      setTotalPrice(totalPrice + Number(price))
     } else {
-      setTotalPrice(totalPrice - ~~parseFloat(price))
+      setTotalPrice(totalPrice - Number(price))
     }
   }
 
@@ -48,7 +48,7 @@ export function RegisterEntrance({ setCards, }) {
                 type="number"
                 step="0.01"
                 id="price"
-                onChange={e => setPrice(parseFloat(e.target.value).toFixed(2))}
+                onChange={e => setPrice(Number(e.target.value).toFixed(2))}
                 placeholder='0,00' />
               <span>R$</span>
             </div>
@@ -69,7 +69,7 @@ export function RegisterEntrance({ setCards, }) {
         <div className="totatSum">
           <h2>Valor total:</h2>
           <span>O valor se refere ao saldo</span>
-          <p>R$ {totalPrice}</p>
+          <p>R$ {totalPrice.toFixed(2)}</p>
         </div>
       }
     </>
